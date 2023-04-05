@@ -1,0 +1,68 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+
+}
+
+.title{
+    font-size: 65px;
+    margin-bottom: 10px;
+    animation: titleAnimation 1.5s;
+}
+
+.adviceButton{
+    background: black;
+    color:white;
+    border: 0;
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.adviceButton:hover{
+    transform: scale(1.2);
+}
+
+.adviceScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.adviceScreen span{
+    margin-bottom: 10px;
+}
+
+
+@media(max-width: 680px){
+    .container h1{
+        font-size: 40px;
+    }
+}
+
+
+@keyframes titleAnimation {
+    from{
+        transform: rotateY(30deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+    
+}
